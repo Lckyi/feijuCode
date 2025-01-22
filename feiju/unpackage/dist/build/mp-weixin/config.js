@@ -1,0 +1,1 @@
+"use strict";const e=require("./common/vendor.js"),t=e.reactive({globalProjectId:""}),o=e.reactive({URL:"https://iot.moshme.cn:18888"});exports.BASE_URL="https://iot.moshme.cn:18888/prod-api",exports.PROJECTID=t,exports.imgRequestHeader=o;

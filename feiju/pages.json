@@ -1,0 +1,257 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/contacts/contacts",
+			"style" : 
+			{
+				"navigationBarTitleText" : "通讯录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/alarmRecords/alarmRecords",
+			"style" : 
+			{
+				"navigationBarTitleText" : "告警记录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/alarmPush/alarmPush",
+			"style" : 
+			{
+				"navigationBarTitleText" : "实时告警",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/alarmPush/search",
+			"style" : 
+			{
+				"navigationBarTitleText" : "搜索",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/alarmPush/alarmDetails",
+			"style" : 
+			{
+				"navigationBarTitleText" : "告警详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/inspection/inspection",
+			"style" : 
+			{
+				"navigationBarTitleText" : "巡检管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/inspection/dailyInspection",
+			"style" : 
+			{
+				"navigationBarTitleText" : "日常巡检",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/inspection/inspectionCheck",
+			"style" : 
+			{
+				"navigationBarTitleText" : "巡检查看",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/hiddenTrouble",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/subHiddenTrouble",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/hiddenTroubleDisposal",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患处置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/hiddenTroubleAssign",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患指派",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/nameSearch",
+			"style" : 
+			{
+				"navigationBarTitleText" : "指派人员搜索",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/photographed",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患随手拍",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/contacts/operatorPage",
+			"style" : 
+			{
+				"navigationBarTitleText" : "联系人操作",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/user/changePassword",
+			"style" : 
+			{
+				"navigationBarTitleText" : "修改密码",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/hiddenTroubleAudit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患退回",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/hiddenTrouble/hiddenTroubleLog",
+			"style" : 
+			{
+				"navigationBarTitleText" : "隐患日志",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/sceneMonitoring/sceneMonitoring",
+			"style" : 
+			{
+				"navigationBarTitleText" : "场景监控",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/sceneMonitoring/sceneDetails",
+			"style" : 
+			{
+				"navigationBarTitleText" : "场景详情",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path" : "videoSurveillance/videoSurveillance",
+					"style" : 
+					{
+						"navigationBarTitleText" : "视频监控",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path" : "videoSurveillance/rePlayerVideo",
+					"style" : 
+					{
+						"navigationBarTitleText" : "视频监控播放",
+						"navigationStyle": "custom",
+						"mp-weixin": {
+							"usingComponents": {
+							"ezplayer": "plugin://ezplayer/ezplayer"
+							}
+						}
+					}
+				}
+			],
+			// 萤石小程序插件
+			"plugins" : {
+				"ezplayer" : {
+					"version" : "1.0.4",
+					"provider" : "wxf2b3a0262975d8c2"
+				}
+			}
+		}
+	],
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	
+	"tabBar": {
+		"color": "#B8B9B9",
+		"selectedColor": "#3776FF",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabBar/index.png",
+				"selectedIconPath": "static/images/tabBar/index-h.png"
+			},
+			{
+				"text": "通讯录",
+				"pagePath": "pages/contacts/contacts",
+				"iconPath": "static/images/tabBar/contacts.png",
+				"selectedIconPath": "static/images/tabBar/contacts-h.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/user/user",
+				"iconPath": "static/images/tabBar/me.png",
+				"selectedIconPath": "static/images/tabBar/me-h.png"
+				
+			}
+		]
+	}
+}

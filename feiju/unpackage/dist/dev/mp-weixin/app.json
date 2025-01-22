@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/contacts/contacts",
+    "pages/user/user",
+    "pages/alarmRecords/alarmRecords",
+    "pages/alarmPush/alarmPush",
+    "pages/alarmPush/search",
+    "pages/alarmPush/alarmDetails",
+    "pages/inspection/inspection",
+    "pages/inspection/dailyInspection",
+    "pages/inspection/inspectionCheck",
+    "pages/hiddenTrouble/hiddenTrouble",
+    "pages/hiddenTrouble/subHiddenTrouble",
+    "pages/hiddenTrouble/hiddenTroubleDisposal",
+    "pages/hiddenTrouble/hiddenTroubleAssign",
+    "pages/hiddenTrouble/nameSearch",
+    "pages/hiddenTrouble/photographed",
+    "pages/contacts/operatorPage",
+    "pages/user/changePassword",
+    "pages/hiddenTrouble/hiddenTroubleAudit",
+    "pages/hiddenTrouble/hiddenTroubleLog",
+    "pages/sceneMonitoring/sceneMonitoring",
+    "pages/sceneMonitoring/sceneDetails"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "videoSurveillance/videoSurveillance",
+        "videoSurveillance/rePlayerVideo"
+      ],
+      "plugins": {
+        "ezplayer": {
+          "version": "1.0.4",
+          "provider": "wxf2b3a0262975d8c2"
+        }
+      }
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#B8B9B9",
+    "selectedColor": "#3776FF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabBar/index.png",
+        "selectedIconPath": "static/images/tabBar/index-h.png"
+      },
+      {
+        "text": "通讯录",
+        "pagePath": "pages/contacts/contacts",
+        "iconPath": "static/images/tabBar/contacts.png",
+        "selectedIconPath": "static/images/tabBar/contacts-h.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/tabBar/me.png",
+        "selectedIconPath": "static/images/tabBar/me-h.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

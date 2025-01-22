@@ -1,0 +1,86 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.status_bar.data-v-d3a8d4f0 {
+  height: 85px;
+  width: 100%;
+  background-color: #3776FF;
+}
+.content-topbar.data-v-d3a8d4f0 {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3776FF;
+}
+.content-topbar .top-center.data-v-d3a8d4f0 {
+  margin-bottom: 10rpx;
+  font-weight: 400;
+  font-size: 36rpx;
+  color: #FDFDFF;
+}
+.content-topbar .top-left.data-v-d3a8d4f0 {
+  margin-left: 26rpx;
+}
+.content-topbar .top-left.data-v-d3a8d4f0:active {
+  opacity: 0.6;
+}
+.content-topbar .top-right.data-v-d3a8d4f0 {
+  margin-right: 26rpx;
+}
+.container.data-v-d3a8d4f0 {
+  padding: 0 12rpx 32rpx 12rpx;
+}
+.container .Level.data-v-d3a8d4f0 {
+  margin-top: 32rpx;
+}
+.container .Level .Level-title.data-v-d3a8d4f0 {
+  margin-left: 24rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #4F505F;
+}
+.container .Level .Level-list .Level-item.data-v-d3a8d4f0 {
+  width: 218rpx;
+  height: 218rpx;
+  margin: 24rpx 12rpx 0 12rpx;
+  display: inline-block;
+  text-align: center;
+  border-radius: 16rpx;
+  background-color: #fff;
+  box-shadow: 0rpx 2rpx 6rpx 2rpx rgba(0, 0, 0, 0.16);
+}
+.container .Level .Level-list .Level-item .scene-img.data-v-d3a8d4f0 {
+  margin-top: 12rpx;
+}
+.container .Level .Level-list .Level-item .scene-name.data-v-d3a8d4f0 {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #4F505F;
+}
+.container .Level .Level-list .Level-item.data-v-d3a8d4f0:active {
+  opacity: 0.7;
+}
