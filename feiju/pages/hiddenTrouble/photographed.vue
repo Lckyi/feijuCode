@@ -343,7 +343,6 @@
 			scope: 'scope.record',
 			success: (res) => {
 				hasPermission.value = true;
-				console.log('trun');
 			},
 			fail: (err) => {
 				hasPermission.value = false;
@@ -401,7 +400,6 @@
 			progressWidth: Math.floor(recordingDuration.value)
 		}
 		recordingList.value.push(audioData);
-		console.log('录音列表',recordingList.value);
 	});
 	
 	//播放录音
@@ -413,7 +411,6 @@
 			playIndex.value = index;
 			audioContext.src = recordingList.value[index].url;
 			let a = recordingList.value[index];
-			console.log('当前播放的是：',a);
 			audioContext.play();
 			// 播放结束
 			audioContext.onEnded(() => {
@@ -431,7 +428,6 @@
 		popUps.value = '删除成功';
 		successPopup.value.open();
 		deletePopup.value.close();
-		console.log('录音列表',recordingList.value);
 	}
 	function cancel() {
 		deletePopup.value.close();

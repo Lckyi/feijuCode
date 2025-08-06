@@ -178,7 +178,6 @@ const _sfc_main = {
         scope: "scope.record",
         success: (res) => {
           hasPermission.value = true;
-          console.log("trun");
         },
         fail: (err) => {
           hasPermission.value = false;
@@ -234,7 +233,6 @@ const _sfc_main = {
         progressWidth: Math.floor(recordingDuration.value)
       };
       recordingList.value.push(audioData);
-      console.log("录音列表", recordingList.value);
     });
     const playRecording = (index) => {
       audioContext.stop();
@@ -243,8 +241,7 @@ const _sfc_main = {
       } else {
         playIndex.value = index;
         audioContext.src = recordingList.value[index].url;
-        let a = recordingList.value[index];
-        console.log("当前播放的是：", a);
+        recordingList.value[index];
         audioContext.play();
         audioContext.onEnded(() => {
           playIndex.value = "";
@@ -260,7 +257,6 @@ const _sfc_main = {
       popUps.value = "删除成功";
       successPopup.value.open();
       deletePopup.value.close();
-      console.log("录音列表", recordingList.value);
     };
     function cancel() {
       deletePopup.value.close();

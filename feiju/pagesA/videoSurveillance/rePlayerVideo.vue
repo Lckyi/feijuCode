@@ -54,8 +54,6 @@
 				console.error('Error parsing video info:', error);
 			}
 		}
-		console.log('传输的信息',videoInfo.value);
-		console.log('设备编号',videoInfo.value.videoNum);
 	})
 	
 	//选择视频回放时间
